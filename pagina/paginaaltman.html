@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Altman</title>
+    <style type="text/css">
+    a{
+        color: white;
+        text-decoration: none;
+    }
+*{
+    margin:2%;
+    padding:0;
+    font-family:center;
+    text-align: center;   
+}
+h1{
+    color:rgba(255, 0, 0, 1);
+    font-size: 40px;
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+body{
+    background-color: black;
+}
+@keyframes texto{
+from{
+    color:rgba(255, 0, 0, 0);
+}
+to{
+    color:rgba(255, 0, 0, 1);
+}
+}
+
+p{
+    color:rgba(0, 0, 0, 0);
+    animation-name: parrafo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay:3s;
+    animation-fill-mode: forwards;
+    text-align: center;   
+}
+p:nth-of-type(2){
+    animation-delay: 7s;
+
+}
+@keyframes parrafo{
+    from{
+        margin-left: 100%;
+        width: 400%;
+        color:rgba(255, 0, 0, 0);
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+        color:rgb(240, 240, 240);
+    }
+}
+img{
+    opacity: 0;
+    animation-name: foto;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay:0s;
+    display: block;      
+    margin: auto;        
+}
+img:nth-of-type(2) {
+    opacity: 0;
+    animation-name: foto;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 7s; 
+    display: block;      
+    margin: auto;        
+}
+
+
+
+@keyframes foto{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+<body>
+   
+    <h1>SAM ALTMAN</h1>
+    <img src="imagen1.jpeg">
+    <h1>Primeros años y educación</h1>
+    <p>Altman creció en San Luis (Misuri), en una familia judía,
+        como el mayor de cuatro hermanos. Su madre es dermatóloga
+        y su padre era un agente inmobiliario. Recibió su primera
+        computadora a la edad de ocho años.[8] Asistió a la escuela
+            secundaria John Burroughs y estudió Ciencias de la Computación
+            en la Universidad de Stanford hasta que abandonó los estudios 
+            en 2005.[9] En 2017, recibió un título honorario de la Universidad 
+            de Waterloo.[10</p>
+    <img src="imagen2.jpg" alt="">
+    <p>En 2005, a los diecinueve años,[11] Altman cofundó y se
+        convirtió en director ejecutivo de Loopt,[12] una 
+        aplicación móvil de redes sociales basada en la ubicación.
+        Después de recaudar más de $30 millones en capital de riesgo,
+        Loopt se cerró en 2012 después de no poder obtener tracción.
+            Fue adquirida por Green Dot Corporation por $43.4 millones.
+            [13][14</p>
+                <li> <a href="/paginasweb.html">Inicio </a> </li>
+</body>
+</html>

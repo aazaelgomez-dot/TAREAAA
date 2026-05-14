@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lenguajes</title>
+<style>
+     body{
+            background-color: black;
+        }
+     a{
+        color: rgb(240, 7, 7);
+        text-decoration: none;
+    }
+*{
+    margin:0;
+    padding:0;
+}
+.contenedor{
+    width: 600px;
+    height:300px;
+    border:1px solid black;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Tarjetas */
+.tarjeta1, .tarjeta2, .tarjeta3{
+    width:200px;
+    height:300px;
+    background-size: cover;
+    position: absolute;
+}
+
+/* Imagen 1: efecto de deslizamiento */
+.tarjeta1{
+    background-image: url(img/html.jpg);
+    left:0px;
+    top:0px;
+    animation: deslizar 3s forwards;
+}
+@keyframes deslizar {
+    from { left:-200px; }
+    to { left:0px; }
+}
+
+/* Imagen 2: efecto de rebote */
+.tarjeta2{
+    background-image: url(img/css.jpg);
+    left:200px;
+    top:0px;
+    animation: rebote 3s ;
+}
+@keyframes rebote {
+    0% { top:0px; }
+    50% { top:50px; }
+    100% { top:0px; }
+}
+
+/* Imagen 3: efecto de giro */
+.tarjeta3{
+    background-image: url(img/javascrip.jpg);
+    left:400px;
+    top:0px;
+    animation: girar 4s ;
+}
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Eventos al pasar el mouse */
+.tarjeta1:hover, .tarjeta2:hover, .tarjeta3:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    z-index: 1;
+}
+</style>
+</head>
+<body>
+<div class="contenedor">
+    <div class="tarjeta1"></div>
+    <div class="tarjeta2"></div>
+    <div class="tarjeta3"></div>
+</div>
+   <li> <a href="index.html">  Inicio</a> </li>
+</body>
+</html>
