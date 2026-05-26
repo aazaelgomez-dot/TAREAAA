@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>TURISMO PERÚ</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            .inicio{
+                height: 100px;
+                width: 100px;
+                background-color: rgb(10, 219, 45);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+             
+            .contenedor{
+                width: 800px;
+                height: 300px;
+                border: 1px solid black;
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+            }/* hasta aqui preparar para todas las clases */
+
+            .tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4{
+                width: 200px;
+                top: -300px;
+                height: 300px;
+                position: absolute;
+                background-size: cover;
+            }
+            .tarjeta1{
+                left: 0px;
+                background-image: url(img/mar.jpg);
+                animation: tarjeta1 3s 1 forwards;
+            }
+            .tarjeta2{
+                left: 200px;
+                background-image: url(img/costa.jpg);
+                animation: tarjeta1 3s 1 forwards 3s;
+            }
+            .tarjeta3{
+                left: 400px;
+                background-image: url(img/sierra.jpg);
+                animation: tarjeta1 3s 1 forwards 6s;
+            }
+            .tarjeta4{
+                left: 600px;
+                background-image: url(img/selva.jpg);
+                animation: tarjeta1 3s 1 forwards 9s;
+            }
+            /* LAS RICAS ANIMACIONES */
+            @keyframes tarjeta1 {
+                0%{
+                    top: -300px;
+                    transform: rotateY(180deg);
+                }
+                50%{
+                    top: 300px;
+                }
+                100%{
+                    top: 0px;
+                }
+            }
+            
+            /* EVENTOS */
+            .tarjeta1:hover{
+                transition: 1s;
+                scale: 1.2;
+                z-index: 1;
+            }
+            .tarjeta2:hover{
+                transition: 1s;
+                scale: 1.2;
+                z-index: 1;
+            }
+            .tarjeta3:hover{
+                transition: 1s;
+                scale: 1.2;
+                z-index: 1;
+            }
+            .tarjeta4:hover{
+                transition: 1s;
+                scale: 1.2;
+                z-index: 1;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="inicio"><a href="../index.html">Atras</a></div>
+        <div class="contenedor">
+            <div class="tarjeta1"></div>
+            <div class="tarjeta2"></div>
+            <div class="tarjeta3"></div>
+            <div class="tarjeta4"></div>
+            
+        </div>
+    </body>
+</html>

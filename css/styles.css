@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #010911;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+}
+
+h1 {
+    color: #cad3dd;
+    font-size: 2.2rem;
+}
+
+p {
+    color: #5dc8cf;
+    font-size: 1.1rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.cuadrado {
+    width: 160px;  
+    height: 160px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 12px; 
+    cursor: pointer;
+    box-sizing: border-box;
+    
+    
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuadrado:hover {
+    transform: scale(1.15); 
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25); /* Sombra que da efecto de flotado */
+}
+
+/* --- COLORES INICIALES Y COLORES SORPRESA EN HOVER --- */
+
+/* Cuadrado 1 */
+.c1 { background-color: #3498db; }
+.c1:hover { background-color: #2980b9; }
+
+/* Cuadrado 2 */
+.c2 { background-color: #2ecc71; }
+.c2:hover { background-color: #27ae60; }
+
+/* Cuadrado 3 */
+.c3 { background-color: #e74c3c; }
+.c3:hover { background-color: #c0392b; }
+
+/* Cuadrado 4 */
+.c4 { background-color: #9b59b6; }
+.c4:hover { background-color: #8e44ad; }
+
+/* Cuadrado 5 */
+.c5 { background-color: #f1c40f; color: #333; }
+.c5:hover { background-color: #f39c12; color: white; }
+
+/* Cuadrado 6 */
+.c6 { background-color: #1abc9c; }
+.c6:hover { background-color: #16a085; }
+
+/* Cuadrado 7 */
+.c7 { background-color: #e67e22; }
+.c7:hover { background-color: #d35400; }
+
+/* Cuadrado 8 */
+.c8 { background-color: #34495e; }
+.c8:hover { background-color: #2c3e50; }
+
+/* Cuadrado 9 */
+.c9 { background-color: #ff7675; }
+.c9:hover { background-color: #d63031; }
+
+/* Cuadrado 10 */
+.c10 { background-color: #6c5ce7; }
+.c10:hover { background-color: #4834d4; }
+
+/* Cuadrado 11 */
+.c11 { background-color: #00cec9; }
+.c11:hover { background-color: #0097e6; }

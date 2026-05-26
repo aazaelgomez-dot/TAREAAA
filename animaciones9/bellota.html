@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .inicio{
+            height: 50px;
+            width: 100px;
+            background-color: rgb(5, 192, 68);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenedor{
+            width: 400px;
+            height: 700px;
+            background-color: skyblue;
+            position: relative;
+            
+            margin: 0 auto;
+            background-size: cover;
+            overflow: hidden;
+        }
+        
+        .cabeza{
+      
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 135px;
+            top: 170px;
+            background-image: url(img/chimuelo.png);
+            background-size: cover;
+            z-index: 2;
+            clip-path: circle(50% at 50% 50%);
+        }
+        .cuerpo{
+       
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            left: 110px;
+            top: 215px;
+            z-index: 1;
+            background-image: url(img/cuerpo.png);
+            background-size: cover;
+            clip-path: polygon(39% 0, 58% 0, 78% 100%, 21% 100%);
+        }
+        .brazoI{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 88px;
+            top: 235px;
+             background-image: url(img/brazoi.jpg);
+            background-size: cover;
+            clip-path: polygon(23% 29%, 100% 30%, 100% 70%, 21% 70%, 0% 50%);
+
+        }
+        .brazoD{
+   
+            width: 170px;
+            height: 100px;
+            position: absolute;
+            background-position: center center;
+            left: 190px;
+            top: 235px;
+             background-image: url(img/brazod.png);
+            background-size: cover;
+            clip-path: polygon(0 30%, 75% 30%, 100% 50%, 75% 70%, 0 70%);
+        }
+        .pieI{
+            background-color: rgb(102, 15, 201);
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 80px;
+            top: 432px;
+            z-index: 3;
+            clip-path: ellipse(25% 14% at 50% 50%);
+
+        }
+        .pieD{
+            background-color: rgb(69, 10, 233);
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 192px;
+            top: 432px;
+            z-index: 3;
+            clip-path: ellipse(25% 14% at 50% 50%);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="inicio"><a href="../index.html">Atras</a></div>
+    <div class="contenedor">
+
+        
+        <div class="cabeza"></div>
+        <div class="cuerpo"></div>
+        <div class="brazoI"></div>
+        <div class="brazoD"></div>
+        <div class="pieI"></div>
+        <div class="pieD"></div>
+    </div>
+</body>
+</html>

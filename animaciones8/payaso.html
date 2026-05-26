@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .inicio{
+                height: 50px;
+                width: 100px;
+                background-color: rgb(168, 11, 207);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .contenedor{
+            width: 400px;
+            height: 700px;
+            background-color: rgb(170, 12, 209);
+            position: relative;
+            
+            margin: 0 auto;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .gorro{
+            /* background-color: red; */
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 150px;
+            top: 95px;
+            z-index: 1;
+            background-image: url(img/Fondo.avif);
+            background-size: cover;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+        .cabeza{
+            /* background-color: blue; */
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 150px;
+            top: 170px;
+            background-image: url(img/cabezaa.png);
+            background-size: cover;
+            clip-path: circle(50% at 50% 50%);
+        }
+        .cuerpo{
+            /* background-color: black; */
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            left: 150px;
+            top: 260px;
+            z-index: 1;
+            background-image: url(img/Fondo.avif);
+            background-size: cover;
+            clip-path: polygon(39% 0, 58% 0, 78% 100%, 21% 100%);
+        }
+        .brazoI{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 100px;
+            top: 250px;
+            background-image: url(img/brazoii.png);
+            background-size: cover;
+            clip-path: polygon(23% 29%, 100% 30%, 100% 70%, 21% 70%, 0% 50%);
+
+        }
+        .brazoD{
+        
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 200px;
+            top: 250px;
+            background-image: url(img/brazoD.png);
+            background-size: cover;
+            clip-path: polygon(0 30%, 75% 30%, 100% 50%, 75% 70%, 0 70%);
+        }
+        .pieI{
+            background-color: red;
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 80px;
+            top: 420px;
+            background-image: url(img/botas.jpg);
+            background-size: cover;
+            clip-path: ellipse(25% 14% at 50% 50%);
+
+        }
+        .pieD{
+            background-color: red;
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 170px;
+            top: 420px;
+            background-image: url(img/botas.jpg);
+            background-size: cover;
+            clip-path: ellipse(25% 14% at 50% 50%);
+
+        }
+    </style>
+</head>
+<body>
+     <div class="inicio"><a href="../index.html">Atras</a></div>
+    <div class="contenedor">
+        <div class="gorro"></div>
+        <div class="cabeza"></div>
+        <div class="cuerpo"></div>
+        <div class="brazoI"></div>
+        <div class="brazoD"></div>
+        <div class="pieI"></div>
+        <div class="pieD"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.inicio{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(18, 218, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+.contenedor{
+    width: 600px;
+    height: 900px;
+    border:1px solid white;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.franja1{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top:200px;
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 50%);
+    z-index: 2;
+    overflow: hidden;
+}
+
+.mujer{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.franja2{
+    width: 250px;
+    height: 400px;
+    background-color: yellow;
+    position: absolute;
+    top:450px;
+    left:35px;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    z-index: 4;
+}
+
+.franja3{
+    width: 600px;
+    height: 700px;
+    background-color: rgb(24, 23, 23);
+    position: absolute;
+    top:0px;
+    left:0px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    z-index: 1;
+}
+
+.modelo{
+    width: 470px;
+    top: 100px;
+    left: -60px;
+    position: absolute;
+    z-index: 3;
+}
+
+.titulo{
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    z-index: 5;
+    font-family: Arial;
+    color: white;
+    text-align: right;
+}
+
+.titulo h1{
+    color: yellow;
+    font-size: 55px;
+}
+
+.titulo h2{
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.texto-programa{
+    width: 180px;
+    position: absolute;
+    top: 520px;
+    left: 75px;
+    z-index: 5;
+    color: black;
+    font-family: Arial;
+}
+
+.texto-programa h1{
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.texto-programa ul{
+    padding-left: 18px;
+}
+
+.texto-programa li{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.contacto{
+    width: 230px;
+    position: absolute;
+    top: 640px;
+    left: 330px;
+    z-index: 10;
+    font-family: Arial;
+    color: white;
+}
+
+.contacto h3{
+    font-size: 15px;
+    color: yellow;
+    margin-bottom: 5px;
+}
+
+.contacto h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contacto p{
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(190,190,190);
+}
